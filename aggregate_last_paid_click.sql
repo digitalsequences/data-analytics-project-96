@@ -109,10 +109,10 @@ final_data AS (
 
 SELECT
     visit_date,
+    visitors_count,
     utm_source,
     utm_medium,
     utm_campaign,
-    visitors_count,
     total_cost,
     leads_count,
     purchases_count,
@@ -125,4 +125,5 @@ ORDER BY
     visitors_count DESC,
     utm_source ASC,
     utm_medium ASC,
-    utm_campaign ASC;
+    utm_campaign ASC
+   LIMIT 15;
