@@ -71,7 +71,7 @@ final_data AS (
         lpc.utm_medium,
         lpc.utm_campaign,
         COUNT(lpc.visitor_id) AS visitors_count,
-        COALESCE(ac.total_cost, 0) AS total_cost,
+        ac.total_cost AS total_cost,
         COUNT(DISTINCT lpc.lead_id) AS leads_count,
         COUNT(
             DISTINCT CASE
